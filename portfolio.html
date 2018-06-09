@@ -1,163 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Bootstrap Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Bob Peters' Portfolio</title>
 </head>
 
 <body>
 
-        <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><h3>Bob Peters</h3></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h3>Bob Peters</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a>
-                   </li>
-                   <li class="nav-item active">
-                    <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-              <div class="container" id="contentArea">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="card" id="mainContent">
-                      <div class="card-header">
+    <div class="container" id="contentArea">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card" id="mainContent">
+                    <div class="card-header">
                         <h1>Portfolio</h1>
-                      </div>
-                      <div class="card-body">
-                        <div class="row justify-content-around">
-                            <div class="col-s-6">
-                                <a href="https://bobby-lishez.github.io/hangman-game" target = "_blank">
-                                    <img height = 213px width = 213px src = "assets/images/hangman.jpg" alt = "hangman">                                
-                                <h2 class = "boxLabel">Hangman</h2>
-                            </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="accordion" id="accordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Large/Collaborative Projects
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#kitchen-kit-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Kitchen Kit
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="kitchen-kit-collapse">
+                                                <div class="card card-body">
+                                                    A Firebase app to keep track of your pantry, store your own recipes, and search for new ones.<br>
+                                                    Repo: <a href = "https://github.com/MadManta/pantrybuilder" target = "_blank">https://github.com/MadManta/pantrybuilder</a>
+                                                    Site: <a href = "https://madmanta.github.io/pantrybuilder/" target = "_blank">https://madmanta.github.io/pantrybuilder/</a>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#oil-change-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    The Oil Change
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="oil-change-collapse">
+                                                <div class="card card-body">
+                                                    Business Website for The Oil Change, a Spanish Fork oil&lube<br>
+                                                    Repo: <a href = "https://github.com/JessieHaus/The-Oil-Change-" target = "_blank">https://github.com/JessieHaus/The-Oil-Change-</a>
+                                                    Site: <a href = "https://the-oil-change.herokuapp.com/" target = "_blank">https://the-oil-change.herokuapp.com/</a>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#dialysis-app-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Dialysis Assistant
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="dialysis-app-collapse">
+                                                <div class="card card-body">
+                                                    (work in progress) A PhoneGap app to help Dialysis patients keep track of fluid intake, blood pressure, and more<br>
+                                                    Repo: <a href = "https://github.com/RyanBangerter/Dialysis-app" target ="_blank">https://github.com/RyanBangerter/Dialysis-app</a>
+                                                    Site: Coming Soon
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Html/JS Classwork
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#hangman-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Geography Hangman
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="hangman-collapse">
+                                                <div class="card card-body">
+                                                    Hangman Game with a geography theme<br>
+                                                    Repo: <a href = "https://github.com/Bobby-Lishez/hangman-game" target = "_blank">https://github.com/Bobby-Lishez/hangman-game</a>
+                                                    Site: <a href = "https://bobby-lishez.github.io/hangman-game/" target = "_blank">https://bobby-lishez.github.io/hangman-game/</a>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#trivia-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Trivia Game                                               
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="trivia-collapse">
+                                                <div class="card card-body">
+                                                    Simple trivia game that pulls questions from the api Qriusity<br>
+                                                    Repo: <a href = "https://github.com/Bobby-Lishez/TriviaGame" target = "_blank">https://github.com/Bobby-Lishez/TriviaGame</a>
+                                                    Site: <a href = "https://bobby-lishez.github.io/TriviaGame/" target = "_blank">https://bobby-lishez.github.io/TriviaGame/</a>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#trains-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Train Scheduler
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="trains-collapse">
+                                                <div class="card card-body">
+                                                    A firebase app to schedule trains and inform you of the next arrival<br>
+                                                    Repo: <a href = "https://github.com/Bobby-Lishez/TrainSchedule" target = "_blank">https://github.com/Bobby-Lishez/TrainSchedule</a>
+                                                    Site: <a href = "https://bobby-lishez.github.io/TrainSchedule/" target = "_blank">https://bobby-lishez.github.io/TrainSchedule/</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Node/Express Classwork
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#burger-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Burger Logger
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="burger-collapse">
+                                                <div class="card card-body">
+                                                    A simple SQL node app that keeps record of the fascinating burgers you've eaten<br>
+                                                    Repo: <a href = "https://github.com/Bobby-Lishez/burger" target = "_blank">https://github.com/Bobby-Lishez/burger</a>
+                                                    Site: <a href = "https://vast-woodland-69303.herokuapp.com/" target = "_blank">https://vast-woodland-69303.herokuapp.com/</a>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#friend-collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Friend Finder
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="friend-collapse">
+                                                <div class="card card-body">
+                                                    Personality quiz that compares your results to a database and shows you your best match<br>
+                                                    Repo: <a = href = "https://github.com/Bobby-Lishez/friendFinder" target = "_blank">https://github.com/Bobby-Lishez/friendFinder</a>
+                                                    Site: <a = href = "https://infinite-savannah-66385.herokuapp.com/survey" target = "_blank">https://infinite-savannah-66385.herokuapp.com/survey</a>
+                                                </div>
+                                            </div>
+                                            <!-- <p>
+                                                <a class="btn btn-primary" data-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Name
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
+                                                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-s-6">
-                                 <a href="https://bobby-lishez.github.io/week4game/" target = "_blank">
-                                    <img height = 213px width = 213px src = "assets/images/dice.jpg" alt = "dice">
-                                <h2 class = "boxLabel">RPG Game</h2>
-                                </a>
+                        </div> 
                             </div>
                         </div>
-                        <div class="row justify-content-around">
-                                <div class="col-s-6">
-                                     <a href="https://bobby-lishez.github.io/TriviaGame/" target = "_blank">
-                                        <img height = 213px width = 213px src = "assets/images/trivia.png" alt = "trivia"> 
-                                        <h2 class = "boxLabel">Trivia Game</h2>
-                                    </a>
-                                </div>
-                                <div class="col-s-6">
-                                    <a href="about:blank" target = "_blank">
-                                        <img height = 213px width = 213px src = "assets/images/reporter.jpg" alt = "news">    
-                                    <h2 class = "boxLabel">Reuters Info<br>Widget</h2>
-                                   </a>
-                                </div>
-                            </div>
-                            <div class="row justify-content-around">
-                                    <div class="col-s-6">
-                                        <a href="about:blank" target = "_blank">
-                                            <img height = 213px width = 213px src = "assets/images/scissors.jpg" alt = "scissors">
-                                            <h2 class = "boxLabel">Rock Paper<br>Scissors</h2> 
-                                        </a>
-                                    </div>
-                                    <div class="col-s-6">
-                                        <a href = "https://bobby-lishez.github.io/GifTastic/" target = "_blank">
-                                          <img height - 213 px width = 213 px src = "assets/images/dice.jpg" alt = "dice">
-                                          <h2 class = "boxLabel">GifTastic</h2>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-around">
-                                  <div class="col-s-6">
-                                      <a href="https://bobby-lishez.github.io/TrainSchedule/" target = "_blank">
-                                          <img height = 213px width = 213px src = "assets/images/scissors.jpg" alt = "scissors">
-                                          <h2 class = "boxLabel">Train Schedule</h2> 
-                                      </a>
-                                  </div>
-                                  <div class="col-s-6">
-                                      <a href = "https://bobby-lishez.github.io/GifTastic/" target = "_blank">
-                                        <img height - 213 px width = 213 px src = "assets/images/dice.jpg" alt = "dice">
-                                        <h2 class = "boxLabel">GifTastic</h2>
-                                      </a>
-                                  </div>
-                              </div>
-                              <div class="row justify-content-around">
-                                    <div class="col-s-6">
-                                         <a href="https://bobby-lishez.github.io/liribot/" target = "_blank">
-                                            <img height = 213px width = 213px src = "assets/images/trivia.png" alt = "trivia"> 
-                                            <h2 class = "boxLabel">Liri Bot</h2>
-                                        </a>
-                                    </div>
-                                    <div class="col-s-6">
-                                        <a href="https://github.com/Bobby-Lishez/burger" target = "_blank">
-                                            <img height = 213px width = 213px src = "assets/images/reporter.jpg" alt = "news">    
-                                        <h2 class = "boxLabel">Burger Logger</h2>
-                                       </a>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-around">
-                                    <div class="col-s-6">
-                                         <a href="https://github.com/JessieHaus/The-Oil-Change-" target = "_blank">
-                                            <img height = 213px width = 213px src = "assets/images/trivia.png" alt = "trivia"> 
-                                            <h2 class = "boxLabel">Oil Change Website</h2>
-                                        </a>
-                                    </div>
-                                    <div class="col-s-6">
-                                        <a href="https://github.com/Bobby-Lishez/burger" target = "_blank">
-                                            <img height = 213px width = 213px src = "assets/images/reporter.jpg" alt = "news">    
-                                        <h2 class = "boxLabel">Burger Logger</h2>
-                                       </a>
-                                    </div>
-                                </div>
-                      </div>
                     </div>
-                  </div>
+                
+            
 
-                  <div class="col-md-4">
-                    <section class = "card" id="connectCard">
-                      <div class="card-header">
+            <div class="col-md-4">
+                <section class="card" id="connectCard">
+                    <div class="card-header">
                         <h2>Connect with me</h2>
-                      </div>
-                      <div class="card-body">
-                        <a href = "https://www.linkedin.com/in/bob-peters-015785157/" target= "_blank">
-                        <img height = 50px width = 50px src = "assets/images/linkedin.png" alt = "linkedin">
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.linkedin.com/in/bob-peters-015785157/" target="_blank">
+                            <img height=5 0px width=5 0px src="assets/images/linkedin.png" alt="linkedin">
                         </a>&ensp;
-                        <a href = "https://github.com/Bobby-Lishez" target= "_blank">
-                        <img  height = 50px width = 50px src = "assets/images/github.png" alt = "github">
+                        <a href="https://github.com/Bobby-Lishez" target="_blank">
+                            <img height=5 0px width=5 0px src="assets/images/github.png" alt="github">
                         </a>&ensp;
-                        <a href = "https://stackoverflow.com/users/story/9243291#" target= "_blank">
-                        <img height = 50px width = 50px src = "assets/images/stack_overflow.png" alt = "stackOverflow">
+                        <a href="https://stackoverflow.com/users/story/9243291#" target="_blank">
+                            <img height=5 0px width=5 0px src="assets/images/stack_overflow.png" alt="stackOverflow">
                         </a>
-                      </div>
-                  </section>
-                  </div>
-                </div>
-              </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
-              <div class="card text-center bg-dark text-light" id="footer">
-                <div class="card-footer text-muted">
-                    Copyright © 2018 Bob Peters
-                </div>
-              </div>
-    
+    <div class="card text-center bg-dark text-light" id="footer">
+        <div class="card-footer text-muted">
+            Copyright © 2018 Bob Peters
+        </div>
+    </div>
+
 </body>
+
 </html>
